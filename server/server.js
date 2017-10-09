@@ -31,7 +31,7 @@ var path = require("path");
 http.createServer(function(request, response) {
   urlRequest = request.url.toString();
 
-  // //formatting the url to include ".html" if not there
+  // //formatting the url to include ".html" if not there  
   // if(urlRequest.slice(-5)!==".html"){
   //   console.log("ENTERED");
   //   urlRequest = urlRequest + ".html";
@@ -127,7 +127,6 @@ function verifyWebpage(param){
     || param === "/courses.html"
     || param === "/index.html"
     || param === "/login.html"
-    || param ==="/components/navigation-bar.html"
     ){
     return true;
   }
@@ -137,3 +136,9 @@ function verifyWebpage(param){
 
 //Note: need a function that can detect if login, and then checks the information for the database if it matches
 //if so, that page will need to use oauth with facebook's api
+
+
+
+
+
+
